@@ -17,7 +17,23 @@ def load_json(file_path: str) -> dict:
         print(f"Error leyendo {file_path}: {e}", file=sys.stderr)
         sys.exit(1)
 
-
+def load_json_from_url(url: str) -> dict:
+    """Descarga el JSON desde la URL remota en lugar de leerlo localmente."""
+    print(f"📦 Descargando lista de mods desde {url}...", file=sys.stderr)
+    try:
+        result = subprocess.run(
+            ['curl', '-L', '-s', url],
+            capture_output=True,  # Captura stdout y stderr
+            text=True,
+            check=True
+        )
+        return json.loads(result.stdout) # Carga el contenido descargado
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Error al descargar el JSON. Código: {e.returncode}", file=sys.stderr)
+        sys.exit(1)
+    except json.JSONDecodeError as e:
+        print(f"❌ El contenido descargado no es un JSON válido: {e}", file=sys.stderr)
+        sys.exit(1)
 
 
 def download_file(url: str, dest_path: Path) -> bool:
@@ -55,7 +71,7 @@ def sync_mods(mode: str, target_dir: str):
         print(f"❌ No se encuentra {json_file}", file=sys.stderr)
         sys.exit(1)
 
-    data = load_json(json_file)
+    data = load_json_from_url(json_file)
     if "mods" not in data:
         print("❌ El JSON debe contener una clave 'mods'", file=sys.stderr)
         sys.exit(1)
