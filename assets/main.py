@@ -8,6 +8,8 @@ import sys
 from pathlib import Path
 from typing import Dict, Optional
 
+JSON_URL = "https://raw.githubusercontent.com/Gekk0-asm/mods/2d99ba91503cffcd8910a6c127d98dc928ad4bf0/assets/list.json"
+
 
 def load_json(file_path: str) -> dict:
     try:
@@ -66,7 +68,7 @@ def save_cache(cache_file: Path, cache: Dict[str, Optional[str]]):
 
 
 def sync_mods(mode: str, target_dir: str):
-    json_file = "mods.json"
+    json_file = JSON_URL
     if not os.path.isfile(json_file):
         print(f"❌ No se encuentra {json_file}", file=sys.stderr)
         sys.exit(1)
