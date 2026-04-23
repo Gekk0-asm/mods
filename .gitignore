@@ -1,0 +1,23 @@
+# --- Binarios y Entorno ---
+# Ignoramos la carpeta del Python portátil porque es muy pesada
+# y se puede descargar con el script si es necesario.
+python/
+
+# --- Archivos de Configuración Local ---
+# Ignoramos el JSON local si ahora vas a usar una URL (opcional)
+# Si prefieres seguir teniendo un backup local, comenta la siguiente línea con #
+mods.json
+list.json
+
+# --- Archivos Temporales y Caché ---
+# Ignoramos las listas de caché que genera el script (.mods_cache_client.txt, etc.)
+.mods_cache_*.txt
+
+# Ignoramos la carpeta de mods descargados para no llenar el repo de .jar
+mods/
+*.jar
+
+# --- Python específicos ---
+__pycache__/
+*.py[cod]
+*$py.class
