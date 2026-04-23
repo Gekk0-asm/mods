@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from typing import Dict, Optional
 
-JSON_URL = "https://raw.githubusercontent.com/Gekk0-asm/mods/2d99ba91503cffcd8910a6c127d98dc928ad4bf0/assets/list.json"
+JSON_URL = "https://raw.githubusercontent.com/Gekk0-asm/mods/refs/heads/main/assets/list.json"
 
 
 def load_json(file_path: str) -> dict:
