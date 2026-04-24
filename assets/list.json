@@ -142,6 +142,13 @@
             "url": "https://mediafilez.forgecdn.net/files/5401/35/advancednetherite-forge-2.1.3-1.20.1.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "not_enough_animations",
+            "description": "Llevando animaciones en primera persona a la tercera persona.",
+            "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/jc7Z1Zot/notenoughanimations-forge-1.12.2-mc1.20.1.jar",
+            "side": "client",
+            "dependencies": []
         }
     ]
 }
