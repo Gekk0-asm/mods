@@ -1,4 +1,4 @@
-name: Autorestart Server Selectivo
+name: Autorestart Server
 
 on:
   push:
