@@ -169,6 +169,13 @@
                     "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/t8TXrZvZ/cloth-config-11.1.136-forge.jar"
                 }
             ]
+        },
+        {
+            "name": "ambient_environment",
+            "description": "Agrega más ambiente a un mundo de Minecraft",
+            "url": "https://cdn.modrinth.com/data/DyTvM1dv/versions/BYzQMmi7/AmbientEnvironment-forge-1.20.1-11.0.0.1.jar",
+            "side": "client",
+            "dependencies": []
         }
     ]
 }
