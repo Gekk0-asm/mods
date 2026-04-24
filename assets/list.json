@@ -109,6 +109,13 @@
             "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/nHO20lBX/entityculling-forge-1.10.1-mc1.20.1.jar",
             "side": "client",
             "dependencies": []
+        },
+        {
+            "name": "thalassophobia",
+            "description": "¡Explora las profundidades… pero ten cuidado con los aterradores monstruos marinos que acechan en ellas!",
+            "url": "https://mediafilez.forgecdn.net/files/7434/778/Thalassophobia-forge-1.20.1-1.7.2.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
