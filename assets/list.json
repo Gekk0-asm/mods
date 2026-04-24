@@ -162,7 +162,13 @@
             "description": "BetterF3 es un mod que reemplaza el HUD de depuración original de Minecraft con un HUD altamente personalizable",
             "url": "https://cdn.modrinth.com/data/8shC1gFX/versions/xo6HmgWj/BetterF3-7.0.2-Forge-1.20.1.jar",
             "side": "client",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "cloth_config_api",
+                    "description": "Biblioteca de configuración para mods de Minecraft",
+                    "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/t8TXrZvZ/cloth-config-11.1.136-forge.jar"
+                }
+            ]
         }
     ]
 }
