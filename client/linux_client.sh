@@ -1,28 +1,14 @@
 #!/bin/bash
 
-# --- Configuración ---
-INPUT_SIDE=${1:-client}
-MODS_DIR=${2:-mods}
+# --- Configuración fija ---
+SIDE="client"
+MODS_DIR="./mods"
 PYTHON_BIN="./python/bin/python3"
 PYTHON_URL="https://github.com/indygreg/python-build-standalone/releases/download/20240107/cpython-3.10.13+20240107-x86_64-unknown-linux-gnu-install_only.tar.gz"
 MAIN_PY_URL="https://raw.githubusercontent.com/Gekk0-asm/mods/refs/heads/main/assets/main.py" 
 MAIN_PY="main.py"
 
-# Normalizar argumentos (client/server)
-case "$INPUT_SIDE" in
-    client)
-        INPUT_SIDE="client"
-        ;;
-    server)
-        INPUT_SIDE="server"
-        ;;
-    *)
-        echo "Modo inválido: $INPUT_SIDE. Usa 'client' o 'server'"
-        exit 1
-        ;;
-esac
-
-echo "--- Iniciando Sistema ($INPUT_SIDE) ---"
+echo "--- Iniciando Sistema (cliente fijo) ---"
 
 # 1. Verificar / descargar Python portable
 if [ ! -f "$PYTHON_BIN" ]; then
@@ -42,8 +28,20 @@ if [ ! -f "$PYTHON_BIN" ]; then
     echo "[✓] Python portable instalado en ./python"
 fi
 
-# 2. Descargar main.py (siempre la última versión)
-echo "[+] Descargando $MAIN_PY desde $MAIN_PY_URL ..."
+# 2. Instalar requests (siempre verificar que esté)
+echo "[+] Verificando/instalando 'requests'..."
+$PYTHON_BIN -m ensurepip --upgrade &>/dev/null
+if ! $PYTHON_BIN -m pip show requests &>/dev/null; then
+    $PYTHON_BIN -m pip install --no-cache-dir requests &>/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Error: No se pudo instalar requests"
+        exit 1
+    fi
+fi
+echo "[✓] 'requests' disponible"
+
+# 3. Descargar main.py (siempre la última versión)
+echo "[+] Descargando última versión de $MAIN_PY ..."
 curl -L -o "$MAIN_PY" "$MAIN_PY_URL"
 if [ $? -ne 0 ] || [ ! -f "$MAIN_PY" ]; then
     echo "Error: No se pudo descargar $MAIN_PY"
@@ -51,9 +49,9 @@ if [ $? -ne 0 ] || [ ! -f "$MAIN_PY" ]; then
 fi
 echo "[✓] $MAIN_PY descargado correctamente"
 
-# 3. Ejecutar main.py
+# 4. Ejecutar main.py con argumentos fijos (client y ./mods)
 echo "--- Sincronizando mods ---"
-$PYTHON_BIN "$MAIN_PY" "$INPUT_SIDE" "$MODS_DIR"
+$PYTHON_BIN "$MAIN_PY" --side "$SIDE" --path "$MODS_DIR"
 if [ $? -ne 0 ]; then
     echo "Error durante la sincronización. Abortando."
     exit 1
