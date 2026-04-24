@@ -4,7 +4,7 @@
 SIDE="client"
 MODS_DIR="./mods"
 PYTHON_BIN="./python/bin/python3"
-PYTHON_URL="https://github.com/indygreg/python-build-standalone/releases/download/20240107/cpython-3.10.13+20240107-x86_64-unknown-linux-gnu-install_only.tar.gz"
+PYTHON_URL="https://github.com/astral-sh/python-build-standalone/releases/download/20260414/cpython-3.10.20%2B20260414-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"
 MAIN_PY_URL="https://raw.githubusercontent.com/Gekk0-asm/mods/refs/heads/main/assets/main.py" 
 MAIN_PY="main.py"
 
