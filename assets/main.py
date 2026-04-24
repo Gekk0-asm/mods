@@ -88,7 +88,7 @@ def main ():
         target_items = []
         for item in data.get('mods', []):
             if item['side'] == args.side or item['side'] == 'both':
-                filename = f'{item['name']}.jar'
+                filename = f"{item['name']}.jar"
                 target_items.append({
                     'name': filename,
                     'url': item['url'],
