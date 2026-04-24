@@ -122,7 +122,13 @@
             "description": "Oceanos profundos.",
             "url": "https://mediafilez.forgecdn.net/files/6668/834/deeper-oceans-2.0.0-forge-1.20.1.jar",
             "side": "server",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "lithostitched",
+                    "description": "Mod de biblioteca con nuevas mejoras de configuración y compatibilidad para la generación de mundos.",
+                    "url": "https://mediafilez.forgecdn.net/files/6742/615/lithostitched-forge-1.20.1-1.4.11.jar"
+                }
+            ]
         }
     ]
 }
