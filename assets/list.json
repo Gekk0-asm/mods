@@ -156,6 +156,13 @@
             "url": "https://cdn.modrinth.com/data/RYtXKJPr/versions/q9kZE5Xo/gravestone-forge-1.20.1-1.0.35.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "better_f3",
+            "description": "BetterF3 es un mod que reemplaza el HUD de depuración original de Minecraft con un HUD altamente personalizable",
+            "url": "https://cdn.modrinth.com/data/8shC1gFX/versions/xo6HmgWj/BetterF3-7.0.2-Forge-1.20.1.jar",
+            "side": "client",
+            "dependencies": []
         }
     ]
 }
