@@ -149,6 +149,13 @@
             "url": "https://cdn.modrinth.com/data/MPCX6s5C/versions/jc7Z1Zot/notenoughanimations-forge-1.12.2-mc1.20.1.jar",
             "side": "client",
             "dependencies": []
+        },
+        {
+            "name": "grave_stone_mod",
+            "description": "Coloca una lápida con los artículos de tu inventario en su interior cuando mueras",
+            "url": "https://cdn.modrinth.com/data/RYtXKJPr/versions/q9kZE5Xo/gravestone-forge-1.20.1-1.0.35.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
