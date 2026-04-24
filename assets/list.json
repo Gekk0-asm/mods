@@ -102,6 +102,13 @@
                     "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar"
                 }
             ]
+        },
+        {
+            "name": "entity_culling",
+            "description": "Utilizar el rastreo de rutas asíncrono para ocultar los bloques/entidades que no son visibles.",
+            "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/nHO20lBX/entityculling-forge-1.10.1-mc1.20.1.jar",
+            "side": "client",
+            "dependencies": []
         }
     ]
 }
