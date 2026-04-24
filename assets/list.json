@@ -95,7 +95,13 @@
             "description": "Muestra los avances con un diseño mejorado tipo placa.",
             "url": "https://cdn.modrinth.com/data/9NM0dXub/versions/xqigG9AR/AdvancementPlaques-1.20.1-forge-1.6.9.jar",
             "side": "client",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "iceberg",
+                    "description": "Una biblioteca de modificaciones que contiene nuevos eventos, herramientas de ayuda y utilidades para facilitar la vida de los modders.",
+                    "url": "https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar"
+                }
+            ]
         }
     ]
 }
