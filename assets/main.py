@@ -59,10 +59,10 @@ def load_cache(path):
             return {}
     return {}
 
-def save_cahe(path, metadata):
+def save_cache(path, metadata):
     cachefile = Path(path) / METADATA_FILE
     with open(cachefile, 'w', encoding='utf-8') as f:
-        json.dump(cachefile, f, indent=2, ensure_ascii=False)
+        json.dump(metadata, f, indent=2, ensure_ascii=False)
 
 
 def main ():
@@ -75,7 +75,7 @@ def main ():
     args = parser.parse_args()
 
     try:
-        print(f'--- Descargando la versión {args.side} ---')
+        print(f'--- Sincronizando mods (lado: {args.side}) ---')
 
         data = fetch_json_data(JSON_URL)
         if not data: sys.exit(1)
@@ -85,41 +85,59 @@ def main ():
 
         cachedata = load_cache(base_path)
 
-        target_mods = []
-        for mod in data.get('mods', []):
-            if mod['side'] == args.side or mod['side'] == 'both':
-                filename = f'{mod['name']}.jar'
-                target_mods.append({
+        target_items = []
+        for item in data.get('mods', []):
+            if item['side'] == args.side or item['side'] == 'both':
+                filename = f'{item['name']}.jar'
+                target_items.append({
                     'name': filename,
-                    'url': mod['url'],
-                    'version': mod.get('version', '')
+                    'url': item['url'],
                 })
 
-                for dep in mod.get('dependencies', []):
+                for dep in item.get('dependencies', []):
                     dep_filename = f'{dep['name']}.jar'
-                    target_mods.append({
+                    target_items.append({
                         'name': dep_filename,
                         'url': dep['url'],
-                        'version': mod.get('version', '')
                     })
 
-        allowed_filenames = {m['name'] for m in target_mods}
+        allowed_filenames = {m['name'] for m in target_items}
 
-        print('--- Verificando archivos ---')
+        print('--- Verificando archivos obsoletos ---')
         for existing_file in base_path.glob('*.jar'):
             if existing_file.name not in allowed_filenames:
                 print(f'Eliminando mod no listado: {existing_file.name}')
                 existing_file.unlink()
 
-        for mod in target_mods:
-            mod_path = base_path / mod['name']
+                if existing_file.name in cachedata:
+                    del cachedata[existing_file.name]
 
-            if not mod_path.exists():
-                success = download_file(mod['url'], base_path, mod['name'])
-                
+        print('--- Verificando actualizaciones por URL ---')
+        for item in target_items:
+            filename = item['name']
+            url = item['url']
+            file_path = base_path / filename
+
+            if file_path.exists():
+                cached_url = cachedata.get(filename)
+                if cached_url != url:
+                    print(f'URL cambiada para {filename}: {cached_url} -> {url}. Redescargando...')
+                    if (download_file(url, base_path, filename)):
+                        cachedata[filename] = url
+                    else: 
+                        print(f'  Error al redescargar {filename}')
+                else: print(f'{filename} sin cambios.')
+
+            else:
+                if download_file(url, base_path, filename):
+                    cachedata[filename] = url
+                else:
+                    print(f'  Error al descargar {filename}')
+        
+        save_cache(base_path, cachedata)
         print("\n--- Sincronización finalizada. ---")
 
-        # print(target_mods)
+        # print(target_items)
     except Exception as error:
         print(error)
 
