@@ -74,7 +74,7 @@
         },
         {
             "name": "zombie_variants",
-            "description": "Add 15 variants of zombies that can appear in different biomes!",
+            "description": "Add 15 variants of zombies that can appear in different biomes",
             "url": "https://cdn.modrinth.com/data/b9aFBeGb/versions/M2jCbl80/zombie_variants-forge-1.0.3-1.20.1.jar",
             "side": "both",
             "version": "",
@@ -86,6 +86,13 @@
                     "version": ""
                 }
             ]
+        },
+        {
+            "name": "ai_improvements",
+            "description": "Mejora la inteligencia artificial de las entidades para reducir la carga del servidor.",
+            "url": "https://cdn.modrinth.com/data/DSVgwcji/versions/eJihmpNQ/AI-Improvements-1.20-0.5.2.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
