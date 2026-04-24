@@ -115,7 +115,13 @@
             "description": "¡Explora las profundidades… pero ten cuidado con los aterradores monstruos marinos que acechan en ellas!",
             "url": "https://mediafilez.forgecdn.net/files/7434/778/Thalassophobia-forge-1.20.1-1.7.2.jar",
             "side": "both",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "geckolib",
+                    "description": "¡Una biblioteca de animación 3D para entidades, bloques, elementos, armaduras y más!",
+                    "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/HVdLnQMI/geckolib-forge-1.20.1-4.8.3.jar"
+                }
+            ]
         },
         {
             "name": "deeper_oceans",
