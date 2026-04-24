@@ -135,6 +135,14 @@
                     "url": "https://mediafilez.forgecdn.net/files/6742/615/lithostitched-forge-1.20.1-1.4.11.jar"
                 }
             ]
+        },
+        {
+            "name": "advanced_netherite",
+            "description": "¡Un mod configurable, compatible con Vanilla y de código abierto que agrega más niveles de Netherite!",
+            "url": "https://mediafilez.forgecdn.net/files/5401/35/advancednetherite-forge-2.1.3-1.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
+
