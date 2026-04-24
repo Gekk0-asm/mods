@@ -1,161 +1,128 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 import argparse
-import json
-import os
-import subprocess
-import sys
+import requests
 from pathlib import Path
-from typing import Dict, Optional
+import json
 
-JSON_URL = "https://raw.githubusercontent.com/Gekk0-asm/mods/refs/heads/main/assets/list.json"
+JSON_URL = 'https://raw.githubusercontent.com/Gekk0-asm/mods/refs/heads/main/assets/list.json'
+METADATA_FILE = '.mods_cache.json'
 
 
-def load_json(file_path: str) -> dict:
+def download_file(url, dest_folder, custom_name=None):
+    dest_folder = Path(dest_folder)
+    dest_folder.mkdir(parents=True, exist_ok=True)
+
+    if custom_name:
+        file_name = custom_name
+    else:
+        file_name = url.split('/')[-1]
+    
+    file_path = dest_folder / file_name
+
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"Error leyendo {file_path}: {e}", file=sys.stderr)
-        sys.exit(1)
+        print(f'Descargando: {file_name}...')
 
-def load_json_from_url(url: str) -> dict:
-    """Descarga el JSON desde la URL remota en lugar de leerlo localmente."""
-    print(f"📦 Descargando lista de mods desde {url}...", file=sys.stderr)
-    try:
-        result = subprocess.run(
-            ['curl', '-L', '-s', url],
-            capture_output=True,  # Captura stdout y stderr
-            text=True,
-            check=True
-        )
-        return json.loads(result.stdout) # Carga el contenido descargado
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Error al descargar el JSON. Código: {e.returncode}", file=sys.stderr)
-        sys.exit(1)
-    except json.JSONDecodeError as e:
-        print(f"❌ El contenido descargado no es un JSON válido: {e}", file=sys.stderr)
-        sys.exit(1)
+        response = requests.get(url, stream=True, timeout=10)
+        response.raise_for_status()
 
-
-def download_file(url: str, dest_path: Path) -> bool:
-    try:
-        subprocess.run(
-            ['curl', '-L', '-s', '-o', str(dest_path), url],
-            check=True,
-            stdout=subprocess.DEVNULL,
-            stderr=subprocess.DEVNULL
-        )
+        with open(file_path,'wb') as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+        print(f'Descarga completada: {file_path}')
         return True
-    except subprocess.CalledProcessError:
+    except Exception as error:
+        print(f'Error al descargar {file_name}: {error}')
         return False
 
-def load_cache(cache_file: Path) -> Dict[str, Optional[str]]:
-    if cache_file.exists():
+def fetch_json_data(url):
+    try:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as error:
+        print('Error de red:', error)
+        return None
+    except json.JSONDecodeError:
+        print('Error: El contenido descargado no es un JSON válido.')
+        return None
+
+def load_cache(path):
+    cachefile = Path(path) / METADATA_FILE
+
+    if cachefile.exists():
         try:
-            with open(cache_file, 'r', encoding='utf-8') as f:
+            with open(cachefile, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except:
             return {}
     return {}
 
+def save_cahe(path, metadata):
+    cachefile = Path(path) / METADATA_FILE
+    with open(cachefile, 'w', encoding='utf-8') as f:
+        json.dump(cachefile, f, indent=2, ensure_ascii=False)
 
 
-def save_cache(cache_file: Path, cache: Dict[str, Optional[str]]):
-    with open(cache_file, 'w', encoding='utf-8') as f:
-        json.dump(cache, f, indent=2)
+def main ():
+    parser = argparse.ArgumentParser(description='Sincronizador de Mods')
+    parser.add_argument('--side', type=str, choices=['client', 'server'], default='client', help='')
+    parser.add_argument('--file', type=str, default='list.json', help='')
+    parser.add_argument('--path', type=str, default='./mods', help='')
+    parser.add_argument('--autoupdate', type=str, choices=['true', 'false'], default='true', help='')
 
-
-
-def sync_mods(mode: str, target_dir: str):
-    json_file = JSON_URL
-    if not os.path.isfile(json_file):
-        print(f"❌ No se encuentra {json_file}", file=sys.stderr)
-        sys.exit(1)
-
-    data = load_json_from_url(json_file)
-    if "mods" not in data:
-        print("❌ El JSON debe contener una clave 'mods'", file=sys.stderr)
-        sys.exit(1)
-
-    if mode == "server":
-        valid_sides = {"server", "both"}
-    elif mode == "client":
-        valid_sides = {"client", "both"}
-    else:
-        print(f"❌ Modo inválido: {mode}", file=sys.stderr)
-        sys.exit(1)
-
-    target_path = Path(target_dir)
-    target_path.mkdir(parents=True, exist_ok=True)
-
-    # Recolectar mods y dependencias
-    items_map: Dict[str, dict] = {}
-    for mod in data["mods"]:
-        if mod.get("side") not in valid_sides:
-            continue
-
-        name = mod["name"]
-        url = mod["url"]
-        version = mod.get("version")
-        if name not in items_map:
-            items_map[name] = {"url": url, "version": version}
-
-        for dep in mod.get("dependencies", []):
-            dep_name = dep["name"]
-            dep_url = dep["url"]
-            dep_version = dep.get("version")
-            if dep_name not in items_map:
-                items_map[dep_name] = {"url": dep_url, "version": dep_version}
-
-    cache_file = target_path / f".mods_cache_{mode}.json"
-    cache = load_cache(cache_file)
-
-    updated_cache = {}
-    for name, info in items_map.items():
-        jar_file = target_path / f"{name}.jar"
-        cached_version = cache.get(name)
-        current_version = info.get("version")
-        need_download = False
-
-        if not jar_file.exists():
-            need_download = True
-            print(f"[+] Nuevo: {name}", file=sys.stderr)
-        elif current_version is not None and cached_version != current_version:
-            need_download = True
-            print(f"[↻] Versión cambiada: {name} ({cached_version} -> {current_version})", file=sys.stderr)
-
-        if need_download:
-            print(f"    Descargando {name} desde {info['url']} ...", file=sys.stderr)
-            if download_file(info["url"], jar_file):
-                print(f"    ✅ {name} descargado", file=sys.stderr)
-                updated_cache[name] = current_version
-            else:
-                print(f"    ❌ Error en {name}", file=sys.stderr)
-                updated_cache[name] = cached_version
-        else:
-            updated_cache[name] = cached_version if cached_version is not None else current_version
-
-    # Limpiar obsoletos
-    current_names = set(items_map.keys())
-    for cached_name in list(cache.keys()):
-        if cached_name not in current_names:
-            jar_path = target_path / f"{cached_name}.jar"
-            if jar_path.exists():
-                print(f"[-] Eliminando obsoleto: {cached_name}", file=sys.stderr)
-                jar_path.unlink()
-
-    save_cache(cache_file, updated_cache)
-    print(f"✅ Sincronización completada en {target_dir}", file=sys.stderr)
-
-    # --- Imprimir la lista de mods actuales por STDOUT ---
-    for name in sorted(current_names):
-        print(name)
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("mode", choices=["server", "client"])
-    parser.add_argument("target_dir", nargs="?", default="./mods")
     args = parser.parse_args()
-    sync_mods(args.mode, args.target_dir)
+
+    try:
+        print(f'--- Descargando la versión {args.side} ---')
+
+        data = fetch_json_data(JSON_URL)
+        if not data: sys.exit(1)
+        
+        base_path = Path(args.path)
+        base_path.mkdir(parents=True, exist_ok=True)
+
+        cachedata = load_cache(base_path)
+
+        target_mods = []
+        for mod in data.get('mods', []):
+            if mod['side'] == args.side or mod['side'] == 'both':
+                filename = f'{mod['name']}.jar'
+                target_mods.append({
+                    'name': filename,
+                    'url': mod['url'],
+                    'version': mod.get('version', '')
+                })
+
+                for dep in mod.get('dependencies', []):
+                    dep_filename = f'{dep['name']}.jar'
+                    target_mods.append({
+                        'name': dep_filename,
+                        'url': dep['url'],
+                        'version': mod.get('version', '')
+                    })
+
+        allowed_filenames = {m['name'] for m in target_mods}
+
+        print('--- Verificando archivos ---')
+        for existing_file in base_path.glob('*.jar'):
+            if existing_file.name not in allowed_filenames:
+                print(f'Eliminando mod no listado: {existing_file.name}')
+                existing_file.unlink()
+
+        for mod in target_mods:
+            mod_path = base_path / mod['name']
+
+            if not mod_path.exists():
+                success = download_file(mod['url'], base_path, mod['name'])
+                
+        print("\n--- Sincronización finalizada. ---")
+
+        # print(target_mods)
+    except Exception as error:
+        print(error)
+
+
+if __name__ == '__main__':
+    main()
