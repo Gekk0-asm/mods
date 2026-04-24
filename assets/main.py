@@ -95,7 +95,7 @@ def main ():
                 })
 
                 for dep in item.get('dependencies', []):
-                    dep_filename = f'{dep['name']}.jar'
+                    dep_filename = f"{dep['name']}.jar"
                     target_items.append({
                         'name': dep_filename,
                         'url': dep['url'],
