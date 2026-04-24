@@ -1,0 +1,20 @@
+name: Autorestart Server Selectivo
+
+on:
+  push:
+    branches: [main]
+    # El reinicio solo se disparará si cambias archivos en esta carpeta
+    paths:
+      - "assets/**"
+
+jobs:
+  restart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Restart Signal
+        run: |
+          curl -X POST "https://panel.holyhosting.net/api/client/servers/${{ secrets.SERVER_ID }}/power" \
+          -H "Authorization: Bearer ${{ secrets.API_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -H "Accept: Application/vnd.pterodactyl.v1+json" \
+          -d '{"signal": "restart"}'
