@@ -176,7 +176,20 @@
             "url": "https://cdn.modrinth.com/data/DyTvM1dv/versions/BYzQMmi7/AmbientEnvironment-forge-1.20.1-11.0.0.1.jar",
             "side": "client",
             "dependencies": []
+        },
+        {
+            "name": "ambient_sounds",
+            "description": "Agrega más ambiente a un mundo de Minecraft",
+            "url": "https://cdn.modrinth.com/data/DyTvM1dv/versions/BYzQMmi7/AmbientEnvironment-forge-1.20.1-11.0.0.1.jar",
+            "side": "client",
+            "dependencies": []
+        },
+        {
+            "name": "simple_drills",
+            "description": "Agrega varios tipos de taladros",
+            "url": "https://cdn.modrinth.com/data/hcLATe7l/versions/pORjH1YP/simpledrills-1.6.1-forge-1.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
-
