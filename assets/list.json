@@ -197,6 +197,19 @@
             "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/EjdIWWqG/dynamic-fps-3.11.4%2Bminecraft-1.20.0-forge.jars",
             "side": "client",
             "dependencies": []
+        },
+        {
+            "name": "oculus",
+            "description": "Mejorar la optimización del juego",
+            "url": "https://cdn.modrinth.com/data/GchcoXML/versions/iQ1SwGc3/oculus-mc1.20.1-1.8.0.jar",
+            "side": "client",
+            "dependencies": [
+                {
+                    "name": "embeddium",
+                    "description": "Un mod de rendimiento de cliente FOSS potente y compatible con mods para NeoForge",
+                    "url": "https://cdn.modrinth.com/data/sk9rgfiA/versions/UTbfe5d1/embeddium-0.3.31%2Bmc1.20.1.jar"
+                }
+            ]
         }
     ]
 }
