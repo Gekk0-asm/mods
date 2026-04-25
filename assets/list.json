@@ -190,6 +190,13 @@
             "url": "https://cdn.modrinth.com/data/hcLATe7l/versions/pORjH1YP/simpledrills-1.6.1-forge-1.20.1.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "dynamic_fps",
+            "description": "Reduzca el uso de recursos mientras Minecraft esté en segundo plano, inactivo o con batería.",
+            "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/EjdIWWqG/dynamic-fps-3.11.4%2Bminecraft-1.20.0-forge.jars",
+            "side": "client",
+            "dependencies": []
         }
     ]
 }
