@@ -513,6 +513,13 @@
             "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/DG5Fn9Sz/ferritecore-6.0.1-forge.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "canary",
+            "description": "Crucial: Optimiza la IA de los mobs y la física (evita que se queden quietos).",
+            "url": "https://cdn.modrinth.com/data/qa2H4BS9/versions/lauzXB0n/canary-mc1.20.1-0.3.3.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
