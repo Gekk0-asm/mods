@@ -417,6 +417,13 @@
             "url": "https://cdn.modrinth.com/data/w4an97C2/versions/H1a9Tx4h/mcw-lights-1.1.5-mc1.20.1forge.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "mowzies_mobs",
+            "description": "mowzies_mobs añade una variedad de criaturas ficticias a Minecraft, destacando por su IA única, su ambientación envolvente y sus animaciones fluidas. Demuestra tu poderío contra nuevos jefes y enemigos y aduéñate de sus habilidades mágicas.",
+            "url": "https://cdn.modrinth.com/data/BFbX9xcm/versions/acYEfsJa/mowziesmobs-1.8.2.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
