@@ -499,6 +499,13 @@
             "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/4FXHDE9F/spark-1.10.53-forge.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "modern_fix",
+            "description": "Mod todo en uno que mejora el rendimiento, reduce el consumo de memoria y corrige numerosos errores. ¡Compatible con todos tus mods de rendimiento favoritos!",
+            "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/eYMgSQpS/modernfix-forge-5.27.12%2Bmc1.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
