@@ -194,7 +194,7 @@
         {
             "name": "dynamic_fps",
             "description": "Reduce el consumo de recursos cuando Minecraft está en segundo plano o inactivo (ahorro de batería).",
-            "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/EjdIWWqG/dynamic-fps-3.11.4%2Bminecraft-1.20.0-forge.jars",
+            "url": "https://cdn.modrinth.com/data/LQ3K71Q1/versions/EjdIWWqG/dynamic-fps-3.11.4%2Bminecraft-1.20.0-forge.jar",
             "side": "client",
             "dependencies": []
         },
