@@ -326,8 +326,14 @@
             "name": "terralith",
             "description": "Explora casi 100 nuevos biomas que consisten tanto en realismo como en fantasía ligera, utilizando solo bloques Vanilla. Completo con varias estructuras inmersivas para complementar el terreno renovado.",
             "url": "https://cdn.modrinth.com/data/8oi3bsk5/versions/WeYhEb5d/Terralith_1.20.x_v2.5.4.jar",
-            "side": "server",
-            "dependencies": []
+            "side": "both",
+            "dependencies": [
+                {
+                    "name": "dynamic_trees_terralith",
+                    "description": "Mod de compatibilidad entre dynamic_trees y terralith",
+                    "url": "https://cdn.modrinth.com/data/o8eM9Cnp/versions/Hs1FNHJ8/DynamicTreesTerralith-1.20.1-1.2.6.jar"
+                }
+            ]
         },
         {
             "name": "dynamic_trees",
@@ -335,11 +341,6 @@
             "url": "https://cdn.modrinth.com/data/vdjF5PL5/versions/JAF7MM1b/DynamicTrees-1.20.1-1.4.10.jar",
             "side": "both",
             "dependencies": [
-                {
-                    "name": "dynamic_trees_terralith",
-                    "description": "Mod de compatibilidad entre dynamic_trees y terralith",
-                    "url": "https://cdn.modrinth.com/data/o8eM9Cnp/versions/Hs1FNHJ8/DynamicTreesTerralith-1.20.1-1.2.6.jar"
-                },
                 {
                     "name": "dynamic_trees_plus",
                     "description": "¡Más que sólo árboles!",
