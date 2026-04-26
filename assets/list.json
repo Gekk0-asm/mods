@@ -236,6 +236,13 @@
             ]
         },
         {
+            "name": "immediately_fast",
+            "description": "Acelera la renderización en modo inmediato en Minecraft.",
+            "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/OomXW3xp/ImmediatelyFast-Forge-1.5.4%2B1.20.4.jar",
+            "side": "client",
+            "dependencies": []
+        },
+        {
             "name": "valhelsia_structures",
             "description": "Añade nuevas estructuras y mazmorras al mundo, integrándose bien con la generación natural.",
             "url": "https://cdn.modrinth.com/data/T21szC0a/versions/9bGpLPl7/valhelsia_structures-forge-1.20.1-1.1.2.jar",
