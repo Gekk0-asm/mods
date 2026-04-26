@@ -527,6 +527,19 @@
             "url": "https://cdn.modrinth.com/data/iRfIGC1s/versions/cNa0vkNj/starlight-1.1.2%2Bforge.1cda73c.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "saturn",
+            "description": "Limpia la basura de la memoria para que el server no se apague solo.",
+            "url": "https://cdn.modrinth.com/data/2eT495vq/versions/Yx85DYaG/saturn-mc1.20.1-0.1.3.jar",
+            "side": "both",
+            "dependencies": [
+                {
+                    "name": "canary",
+                    "description": "Crucial: Optimiza la IA de los mobs y la física (evita que se queden quietos).",
+                    "url": "https://cdn.modrinth.com/data/qa2H4BS9/versions/lauzXB0n/canary-mc1.20.1-0.3.3.jar"
+                }
+            ]
         }
     ]
 }
