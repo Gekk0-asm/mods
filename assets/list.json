@@ -182,7 +182,13 @@
             "description": "Incorpora sonidos ambientales adicionales (viento, pájaros, insectos) según el bioma y entorno.",
             "url": "https://cdn.modrinth.com/data/fM515JnW/versions/6Xww20gc/AmbientSounds_FORGE_v6.3.6_mc1.20.1.jar",
             "side": "client",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "creative_core",
+                    "description": "Un mod principal",
+                    "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/FjfVIHYH/CreativeCore_FORGE_v2.12.36_mc1.20.1.jar"
+                }
+            ]
         },
         {
             "name": "simple_drills",
