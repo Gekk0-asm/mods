@@ -254,6 +254,24 @@
                     "url": "https://cdn.modrinth.com/data/9qdTHi0q/versions/uZNB5Zrk/man_of_many_planes-0.2.0%2B1.20.1-forge.jar"
                 }
             ]
+        },
+        {
+            "name": "fancy_menu",
+            "description": "¡Personaliza los menús de Minecraft con facilidad!",
+            "url": "https://cdn.modrinth.com/data/Wq5SjeWM/versions/MywA2BxT/fancymenu_forge_3.8.1_MC_1.20.1.jar",
+            "side": "client",
+            "dependencies": [
+                {
+                    "name": "konkrete",
+                    "description": "Sólo otro mod de biblioteca aburrido.",
+                    "url": "https://cdn.modrinth.com/data/J81TRJWm/versions/skYziQQL/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
+                },
+                {
+                    "name": "melody",
+                    "description": "Mod de biblioteca basado en OpenAL para reproducir música de fondo.",
+                    "url": "https://cdn.modrinth.com/data/CVT4pFB2/versions/lJlW5r8R/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar"
+                }
+            ]
         }
     ]
 }
