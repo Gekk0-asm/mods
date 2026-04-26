@@ -540,6 +540,13 @@
                     "url": "https://cdn.modrinth.com/data/qa2H4BS9/versions/lauzXB0n/canary-mc1.20.1-0.3.3.jar"
                 }
             ]
+        },
+        {
+            "name": "dynamic_lights",
+            "description": "¡Las entidades y objetos compatibles, como antorchas, faroles o equipo encantado, emiten luz!",
+            "url": "https://cdn.modrinth.com/data/7YjclEGc/versions/Ag9747sk/dynamiclights-v1.9-mc1.17-1.21.9-mod.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
