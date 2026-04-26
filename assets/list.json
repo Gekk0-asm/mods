@@ -506,6 +506,13 @@
             "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/eYMgSQpS/modernfix-forge-5.27.12%2Bmc1.20.1.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "ferrite_core",
+            "description": "Ahorra muchísima RAM al almacenar los bloques del mundo.",
+            "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/DG5Fn9Sz/ferritecore-6.0.1-forge.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
