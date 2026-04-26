@@ -461,6 +461,13 @@
                     "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/t8TXrZvZ/cloth-config-11.1.136-forge.jar"
                 }
             ]
+        },
+        {
+            "name": "spark",
+            "description": "Spark es una herramienta para analizar el rendimiento de clientes, servidores y proxies de Minecraft.",
+            "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/4FXHDE9F/spark-1.10.53-forge.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
