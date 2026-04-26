@@ -273,5 +273,13 @@
                 }
             ]
         }
+        ,
+        {
+            "name": "guns_++",
+            "description": "Paquete de datos de armas Vanilla multijugador y aptas para supervivencia, muchas versiones a partir de 1.17, agrega armas 50+ y 4 granadas, ¡todas con modelos y sonidos personalizados!",
+            "url": "https://cdn.modrinth.com/data/kdch0Jxf/versions/Oo7Fn01r/guns%2B%2B-4.2.jar",
+            "side": "both",
+            "dependencies": []
+        }
     ]
 }
