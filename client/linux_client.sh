@@ -30,15 +30,18 @@ fi
 
 # 2. Instalar requests (siempre verificar que esté)
 echo "[+] Verificando/instalando 'requests'..."
-$PYTHON_BIN -m ensurepip --upgrade &>/dev/null
-if ! $PYTHON_BIN -m pip show requests &>/dev/null; then
-    $PYTHON_BIN -m pip install --no-cache-dir requests &>/dev/null
+$PYTHON_BIN -m ensurepip --upgrade
+if ! $PYTHON_BIN -m pip show requests; then
+    echo "Instalando requests..."
+    $PYTHON_BIN -m pip install --no-cache-dir requests
     if [ $? -ne 0 ]; then
         echo "Error: No se pudo instalar requests"
         exit 1
     fi
+else
+    echo "requests ya está instalado"
 fi
-echo "[✓] 'requests' disponible"
+echo "[✓] 'requests' listo"
 
 # 3. Descargar main.py (siempre la última versión)
 echo "[+] Descargando última versión de $MAIN_PY ..."
