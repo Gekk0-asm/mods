@@ -241,6 +241,19 @@
                     "url": "https://mediafilez.forgecdn.net/files/7573/740/framework-forge-1.20.1-0.8.0.jar"
                 }
             ]
+        },
+        {
+            "name": "immersive_aircraft",
+            "description": "¡Un montón de aviones rústicos para viajar, transportar y explorar!",
+            "url": "https://cdn.modrinth.com/data/x3HZvrj6/versions/jPZ0GRsN/immersive_aircraft-1.4.0%2B1.20.1-forge.jar",
+            "side": "both",
+            "dependencies": [
+                {
+                    "name": "man_of_many_planes",
+                    "description": "Un conjunto de aeronaves adicionales para immersive_aircrafts.",
+                    "url": "https://cdn.modrinth.com/data/9qdTHi0q/versions/uZNB5Zrk/man_of_many_planes-0.2.0%2B1.20.1-forge.jar"
+                }
+            ]
         }
     ]
 }
