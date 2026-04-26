@@ -347,6 +347,13 @@
                     "url": "https://cdn.modrinth.com/data/qaO9Dqpu/versions/MzWoA26x/DynamicTreesPlus-1.20.1-1.2.2.jar"
                 }
             ]
+        },
+        {
+            "name": "decocraft",
+            "description": "Decocraft añade más de 3000 decoraciones a tu mundo de Minecraft. Este mod te brindará mucha más variedad a la hora de decorar tus construcciones. ¡Muchos de los objetos también son funcionales!",
+            "url": "https://cdn.modrinth.com/data/IZJSgKZe/versions/K6V6djNF/decocraft-3.0.4-1.20.1-slim.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
