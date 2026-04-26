@@ -272,12 +272,18 @@
                     "url": "https://cdn.modrinth.com/data/CVT4pFB2/versions/lJlW5r8R/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar"
                 }
             ]
-        }
-        ,
+        },
         {
             "name": "guns_++",
             "description": "Paquete de datos de armas Vanilla multijugador y aptas para supervivencia, muchas versiones a partir de 1.17, agrega armas 50+ y 4 granadas, ¡todas con modelos y sonidos personalizados!",
             "url": "https://cdn.modrinth.com/data/kdch0Jxf/versions/Oo7Fn01r/guns%2B%2B-4.2.jar",
+            "side": "both",
+            "dependencies": []
+        },
+        {
+            "name": "comforts",
+            "description": "Agrega sacos de dormir y hamacas para, respectivamente, portabilidad y convertir el día en noche, sin generar nuevos engendros. ¡Viene en 16 colores diferentes!",
+            "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/gBDsc134/comforts-forge-6.4.0%2B1.20.1.jar",
             "side": "both",
             "dependencies": []
         }
