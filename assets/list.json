@@ -438,6 +438,29 @@
             "url": "https://cdn.modrinth.com/data/iAiqcykM/versions/HrSzoCLd/justzoom_forge_2.1.1_MC_1.20.1.jar",
             "side": "client",
             "dependencies": []
+        },
+        {
+            "name": "iam_music_player",
+            "description": "Disfruta de la música en el juego.",
+            "url": "https://cdn.modrinth.com/data/ZHHXRhiU/versions/vYutIurF/iammusicplayer-forge-mc1.20-3.22.0-alpha.5.jar",
+            "side": "both",
+            "dependencies": [
+                {
+                    "name": "otyacraft_engine",
+                    "description": "Biblioteca de módulos de integración de Felnull.",
+                    "url": "https://cdn.modrinth.com/data/iu3upNjC/versions/B7tw4g49/otyacraftengine-forge-mc1.20-3.7.0-alpha.2.jar"
+                },
+                {
+                    "name": "architectury_api",
+                    "description": "API intermedia para facilitar el desarrollo de mods multiplataforma.",
+                    "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/1MKTLiiG/architectury-9.2.14-forge.jar"
+                },
+                {
+                    "name": "cloth_config_api",
+                    "description": "Librería para crear configuraciones gráficas en mods de Minecraft.",
+                    "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/t8TXrZvZ/cloth-config-11.1.136-forge.jar"
+                }
+            ]
         }
     ]
 }
