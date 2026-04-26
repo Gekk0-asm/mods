@@ -321,6 +321,13 @@
             "url": "https://cdn.modrinth.com/data/nWSeFpQt/versions/vXDpyYWK/dungeons-and-taverns-swamp-hut-rework-1.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "terralith",
+            "description": "Explora casi 100 nuevos biomas que consisten tanto en realismo como en fantasía ligera, utilizando solo bloques Vanilla. Completo con varias estructuras inmersivas para complementar el terreno renovado.",
+            "url": "https://cdn.modrinth.com/data/8oi3bsk5/versions/WeYhEb5d/Terralith_1.20.x_v2.5.4.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
