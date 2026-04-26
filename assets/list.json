@@ -431,6 +431,13 @@
             "url": "https://cdn.modrinth.com/data/rlloIFEV/versions/4Xs90Bq5/travelersbackpack-forge-1.20.1-9.1.53.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "just_zoom",
+            "description": "¡Haz zoom pulsando una tecla de acceso rápido y ajusta el factor de zoom con la rueda del ratón!",
+            "url": "https://cdn.modrinth.com/data/iAiqcykM/versions/HrSzoCLd/justzoom_forge_2.1.1_MC_1.20.1.jar",
+            "side": "client",
+            "dependencies": []
         }
     ]
 }
