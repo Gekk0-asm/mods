@@ -286,6 +286,41 @@
             "url": "https://cdn.modrinth.com/data/SaCpeal4/versions/gBDsc134/comforts-forge-6.4.0%2B1.20.1.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "dungeons_and_taverns",
+            "description": "Un paquete de datos de estructuras que agrega mazmorras, tabernas y otras estructuras para encontrar mientras exploras el mundo.",
+            "url": "https://cdn.modrinth.com/data/tpehi7ww/versions/ojHpWOrz/dungeons-and-taverns-3.0.3.f.jar",
+            "side": "server",
+            "dependencies": []
+        },
+        {
+            "name": "dungeons_and_taverns_ancient_city_overhaul",
+            "description": "Versión independiente de Splinter de Dungeons and Taverns Ancient City Overhaul",
+            "url": "https://cdn.modrinth.com/data/DNuNq5bb/versions/E9Fv5kp6/dungeons-and-taverns-ancient-city-overhaul-1.jar",
+            "side": "server",
+            "dependencies": []
+        },
+        {
+            "name": "dungeons_and_taverns_stronghold_overhaul",
+            "description": "Este paquete de datos, la versión independiente de Dungeons and Taverns Overhaul of the Stronghold, revisa la fortaleza desde cero con 417 habitaciones diferentes y 5 tipos de subbastiones. Advertencia: su mundo se congelará en la primera generación de estructuras.",
+            "url": "https://cdn.modrinth.com/data/rYocd2LE/versions/XcN77mjg/dungeons-and-taverns-stronghold-rework-1.jar",
+            "side": "server",
+            "dependencies": []
+        },
+        {
+            "name": "dungeons_and_taverns_pillager_outpost_overhaul",
+            "description": "Versión dividida independiente de la revisión del puesto avanzado de saqueadores de Dungeons and Taverns",
+            "url": "https://cdn.modrinth.com/data/QIt10I7z/versions/kAjXYon3/dungeons-and-taverns-pillager-outpost-rework-1.1.jar",
+            "side": "server",
+            "dependencies": []
+        },
+        {
+            "name": "dungeons_and_taverns_swamp_hut_overhaul",
+            "description": "Esta versión independiente de Splinter de Dungeons and Tavern agrega la reelaboración de Swamp Hut. Añadiendo 2 variantes, un cofre de botín, un puesto de elaboración de cerveza y una cama",
+            "url": "https://cdn.modrinth.com/data/nWSeFpQt/versions/vXDpyYWK/dungeons-and-taverns-swamp-hut-rework-1.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
