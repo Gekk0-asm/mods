@@ -520,6 +520,13 @@
             "url": "https://cdn.modrinth.com/data/qa2H4BS9/versions/lauzXB0n/canary-mc1.20.1-0.3.3.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "starlight",
+            "description": "Acelera el motor de iluminación al generar chunks.",
+            "url": "https://cdn.modrinth.com/data/iRfIGC1s/versions/cNa0vkNj/starlight-1.1.2%2Bforge.1cda73c.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
