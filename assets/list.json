@@ -180,7 +180,7 @@
         {
             "name": "ambient_sounds",
             "description": "Incorpora sonidos ambientales adicionales (viento, pájaros, insectos) según el bioma y entorno.",
-            "url": "https://cdn.modrinth.com/data/DyTvM1dv/versions/BYzQMmi7/AmbientEnvironment-forge-1.20.1-11.0.0.1.jar",
+            "url": "https://cdn.modrinth.com/data/fM515JnW/versions/6Xww20gc/AmbientSounds_FORGE_v6.3.6_mc1.20.1.jar",
             "side": "client",
             "dependencies": []
         },
