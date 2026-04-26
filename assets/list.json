@@ -424,6 +424,13 @@
             "url": "https://cdn.modrinth.com/data/BFbX9xcm/versions/acYEfsJa/mowziesmobs-1.8.2.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "travelers_backpack",
+            "description": "¡Mochilas únicas y mejorables con personalización, integración con la API de Curios/Trinkets y mucho más!",
+            "url": "https://cdn.modrinth.com/data/rlloIFEV/versions/4Xs90Bq5/travelersbackpack-forge-1.20.1-9.1.53.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
