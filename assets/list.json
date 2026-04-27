@@ -547,6 +547,13 @@
             "url": "https://cdn.modrinth.com/data/7YjclEGc/versions/Ag9747sk/dynamiclights-v1.9-mc1.17-1.21.9-mod.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "alexs_mobs",
+            "description": "85+ nuevos enemigos con calidad estilística superior a la del juego por defecto.",
+            "url": "https://cdn.modrinth.com/data/2cMuAZAp/versions/XoIASRVU/alexsmobs-1.22.9.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
