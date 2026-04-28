@@ -587,6 +587,13 @@
             "url": "https://mediafilez.forgecdn.net/files/6863/943/naturalist-5.0pre5%2Bforge-1.20.1.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "anti_x_ray",
+            "description": "Ofuscación de minerales para evitar que los jugadores vean diamantes a través de las paredes.",
+            "url": "https://mediafilez.forgecdn.net/files/5634/623/antixray-forge-1.4.6%2B1.20.1.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
