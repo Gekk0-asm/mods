@@ -9,8 +9,6 @@ set PYTHON_BIN=%PYTHON_DIR%\python.exe
 set "PYTHON_URL=https://github.com/astral-sh/python-build-standalone/releases/download/20250106/cpython-3.10.16+20250106-x86_64-pc-windows-msvc-shared-install_only.tar.gz"
 set "MAIN_PY_URL=https://raw.githubusercontent.com/Gekk0-asm/mods/refs/heads/main/assets/main.py"
 set MAIN_PY=main.py
-:: Ruta del launcher oficial
-set LAUNCHER_PATH=%APPDATA%\.minecraft\launcher.exe
 
 echo --- Iniciando Sistema ---
 
@@ -64,12 +62,40 @@ if errorlevel 1 (
     echo [✓] Mods sincronizados correctamente.
 )
 
-:: 5. Lanzar el launcher oficial de Minecraft
+:: 5. Buscar el lanzador en varias ubicaciones conocidas
 echo.
-echo Abriendo el launcher de Minecraft...
-start "" "%LAUNCHER_PATH%"
+echo Buscando el ejecutable del Launcher de Minecraft...
+set "LAUNCHER_FOUND="
 
-:: Fin (sin pausa para que la ventana del script se cierre sola)
+for %%F in (
+    "%ProgramFiles(x86)%\Minecraft\MinecraftLauncher.exe"
+    "%ProgramFiles(x86)%\Minecraft Launcher\MinecraftLauncher.exe"
+    "%ProgramFiles(x86)%\Mojang\minecraft launcher\Minecraft Launcher.exe"
+    "%APPDATA%\.minecraft\launcher.exe"
+) do (
+    if not defined LAUNCHER_FOUND (
+        if exist %%F (
+            set "LAUNCHER_FOUND=%%~F"
+            echo [+] Encontrado en: %%~F
+        )
+    )
+)
+
+:: 6. Lanzar el launcher (o intentar protocolo minecraft:)
+if defined LAUNCHER_FOUND (
+    echo Abriendo %LAUNCHER_FOUND%...
+    start "" "%LAUNCHER_FOUND%"
+) else (
+    echo [!] No se encontro el ejecutable en las rutas tipicas.
+    echo Intentando abrir con el protocolo minecraft: ...
+    start minecraft:
+    if errorlevel 1 (
+        echo [X] Error al intentar abrir el launcher mediante el protocolo.
+    ) else (
+        echo [✓] Launcher abierto correctamente via protocolo minecraft:.
+    )
+)
+
 endlocal
 pause
 exit
