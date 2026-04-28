@@ -599,7 +599,7 @@
             "name": "anticheat",
             "description": "Detección avanzada de hacks de movimiento (vuelo, velocidad) y combate (KillAura).",
             "url": "https://mediafilez.forgecdn.net/files/7011/942/anticheat-1.0.0-v1.1-forge-1.20.1.jar",
-            "side": "server",
+            "side": "both",
             "dependencies": []
         },
         {
