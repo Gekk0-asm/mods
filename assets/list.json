@@ -567,6 +567,13 @@
             "url": "https://cdn.modrinth.com/data/vYSi4UOX/versions/K2bnBnsl/unusualfishmod-1.1.9.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "ribbits",
+            "description": "¡Pueblos de pantano y ranas musicales!",
+            "url": "https://cdn.modrinth.com/data/8YcE8y4T/versions/RCsQFeua/Ribbits-1.20.1-Forge-3.0.5.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
