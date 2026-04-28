@@ -560,6 +560,13 @@
                     "url": "https://cdn.modrinth.com/data/jJfV67b1/versions/lTAAe4sZ/citadel-2.6.3-1.20.1.jar"
                 }
             ]
+        },
+        {
+            "name": "unusual_fish_mod",
+            "description": "¡Añadiendo peces ficticios y otras criaturas acuáticas poco conocidas!",
+            "url": "https://cdn.modrinth.com/data/vYSi4UOX/versions/K2bnBnsl/unusualfishmod-1.1.9.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
