@@ -580,6 +580,13 @@
                     "url": "https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar"
                 }
             ]
+        },
+        {
+            "name": "naturalist",
+            "description": "Añade 24 animales *(¡sin contar variantes!)* a tu mundo con comportamientos inmersivos y caídas.",
+            "url": "https://mediafilez.forgecdn.net/files/6863/943/naturalist-5.0pre5%2Bforge-1.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
