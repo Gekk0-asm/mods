@@ -608,6 +608,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7624/651/indl_hack_detected-1.1.0.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "ledger",
+            "description": "Registro detallado de interacción con bloques para investigar quién minó o rompió algo",
+            "url": "https://mediafilez.forgecdn.net/files/7799/94/Ledger-3.0.2.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
