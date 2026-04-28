@@ -601,6 +601,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7011/942/anticheat-1.0.0-v1.1-forge-1.20.1.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "indl_hack_detected",
+            "description": "Escanea los archivos .jar del cliente del jugador para detectar mods prohibidos o clientes de hack conocidos.",
+            "url": "https://mediafilez.forgecdn.net/files/7624/651/indl_hack_detected-1.1.0.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
