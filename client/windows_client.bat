@@ -70,6 +70,6 @@ echo Abriendo el launcher de Minecraft...
 start "" "%LAUNCHER_PATH%"
 
 :: Fin (sin pausa para que la ventana del script se cierre sola)
-pause
 endlocal
+pause
 exit
