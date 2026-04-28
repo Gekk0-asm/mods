@@ -615,6 +615,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7799/94/Ledger-3.0.2.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "luck_perms",
+            "description": "Te permite crear grupos (ej: admin, mod, usuario), asignarles "nodos" de permiso y establecer jerarquías.",
+            "url": "https://mediafilez.forgecdn.net/files/4738/950/LuckPerms-Forge-5.4.102.jar",
+            "side": "server",
+            "dependencies": []
         }
     ]
 }
