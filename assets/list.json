@@ -615,6 +615,13 @@
             "url": "https://mediafilez.forgecdn.net/files/4738/950/LuckPerms-Forge-5.4.102.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "adm_anticheat",
+            "description": "Anticheat moderno para servidores Forge. Detecta fly, speed, killaura, etc. Ligero y configurable. Requiere estar en servidor y cliente para verificación.",
+            "url": "https://mediafilez.forgecdn.net/files/7185/307/admanticheat-1.9.3-RELEASE.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
