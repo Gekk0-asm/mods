@@ -615,6 +615,13 @@
             "url": "https://mediafilez.forgecdn.net/files/4738/950/LuckPerms-Forge-5.4.102.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "security_craft",
+            "description": "Añade muchos bloques y objetos para defender y asegurar tu base.",
+            "url": "https://cdn.modrinth.com/data/v8jzRtAt/versions/UDbRAGQU/%5B1.20.1%5D%20SecurityCraft%20v1.10.1.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
