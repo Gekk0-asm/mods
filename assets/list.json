@@ -667,21 +667,21 @@
         },
         {
             "name": "legendary_monsters",
-            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "description": "Un mod que enriquece la fauna hostil de Minecraft con criaturas legendarias inspiradas en mitos y folclore. Añade nuevos monstruos únicos que aparecen raramente en distintos biomas y dimensiones, cada uno con habilidades especiales y recompensas valiosas. Ideal para jugadores que buscan enemigos impredecibles que rompan la rutina de los mobs vanilla.",
             "url": "https://mediafilez.forgecdn.net/files/7628/159/legendarymonsters-2.0.6%20MC%201.20.1.jar",
             "side": "both",
             "dependencies": []
         },
         {
             "name": "monster_expansion",
-            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "description": "Un mod de expansión masiva que añade decenas de nuevas criaturas hostiles y neutrales a todas las dimensiones. Desde monstruos de las profundidades en el Nether hasta aberraciones en el End, pasando por bestias mágicas en el Overworld. Cada nuevo mob tiene su propio comportamiento, animaciones y loot, haciendo cada encuentro único y peligroso.",
             "url": "https://mediafilez.forgecdn.net/files/7388/120/monsterexpansion-1.20.1-v0.6.3.jar",
             "side": "both",
             "dependencies": []
         },
         {
             "name": "illage_and_spillage_respillaged",
-            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "description": "Un fork/remake del clásico Illage and Spillage que se centra en expandir el ecosistema de los saqueadores (illagers). Añade nuevos tipos de saqueadores, como el Illager Huntsman o el Spillager, así como nuevas estructuras relacionadas con las incursiones. También incluye jefes menores y mecánicas que hacen las raids mucho más interesantes y variadas.",
             "url": "https://mediafilez.forgecdn.net/files/6156/35/illageandspillagerespillaged-1.2.8.jar",
             "side": "both",
             "dependencies": []
