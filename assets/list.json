@@ -678,6 +678,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7388/120/monsterexpansion-1.20.1-v0.6.3.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "illage_and_spillage_respillaged",
+            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "url": "https://mediafilez.forgecdn.net/files/6156/35/illageandspillagerespillaged-1.2.8.jar",
+            "side": "both",
+            "dependencies": []
         }     
     ]
 }
