@@ -650,6 +650,13 @@
             "url": "https://mediafilez.forgecdn.net/files/5114/579/The_Graveyard_3.1_%28FORGE%29_for_1.20.1.jar",
             "side": "both",
             "dependencies": []
-        }
+        },
+        {
+            "name": "bosses_of_mass",
+            "description": "Mod en desarrollo que añade combates contra jefes a Minecraft",
+            "url": "https://mediafilez.forgecdn.net/files/5067/728/BOMD-Forge-1.20.1-1.1.2.jar",
+            "side": "both",
+            "dependencies": []
+        }    
     ]
 }
