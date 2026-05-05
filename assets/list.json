@@ -629,6 +629,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7605/60/infernalmobs-1.20.1.11.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "open_blocks_elevator",
+            "description": "Agrega elevadores faciles de hacer",
+            "url": "https://mediafilez.forgecdn.net/files/6602/224/elevatorid-1.20.1-1.9.1-forge.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
