@@ -657,6 +657,13 @@
             "url": "https://mediafilez.forgecdn.net/files/5067/728/BOMD-Forge-1.20.1-1.1.2.jar",
             "side": "both",
             "dependencies": []
-        }    
+        },
+        {
+            "name": "cataclysm",
+            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "url": "https://mediafilez.forgecdn.net/files/7934/870/L_Enders_Cataclysm-3.27-curios-fix.jar",
+            "side": "both",
+            "dependencies": []
+        }     
     ]
 }
