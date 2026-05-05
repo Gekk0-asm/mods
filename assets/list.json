@@ -671,6 +671,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7628/159/legendarymonsters-2.0.6%20MC%201.20.1.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "monster_expansion",
+            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "url": "https://mediafilez.forgecdn.net/files/7388/120/monsterexpansion-1.20.1-v0.6.3.jar",
+            "side": "both",
+            "dependencies": []
         }     
     ]
 }
