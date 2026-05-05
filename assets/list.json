@@ -629,6 +629,13 @@
             "url": "https://mediafilez.forgecdn.net/files/6602/224/elevatorid-1.20.1-1.9.1-forge.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "bosses_rise",
+            "description": "Agrega jefes al mudo",
+            "url": "https://mediafilez.forgecdn.net/files/8034/98/block_factorys_bosses-2.1.1-forge-1.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }
     ]
 }
