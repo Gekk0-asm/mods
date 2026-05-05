@@ -454,7 +454,13 @@
             "description": "¡Mochilas únicas y mejorables con personalización, integración con la API de Curios/Trinkets y mucho más!",
             "url": "https://cdn.modrinth.com/data/rlloIFEV/versions/4Xs90Bq5/travelersbackpack-forge-1.20.1-9.1.53.jar",
             "side": "both",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "curios_api",
+                    "description": "",
+                    "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/IPQlZkz1/curios-forge-5.14.1%2B1.20.1.jar"
+                }
+            ]
         },
         {
             "name": "just_zoom",
