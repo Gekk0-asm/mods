@@ -664,6 +664,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7934/870/L_Enders_Cataclysm-3.27-curios-fix.jar",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "legendary_monsters",
+            "description": "Descubre estructuras míticas en tu mundo y a través de dimensiones, albergando enemigos desafiantes, jefes de final de juego y equipo poderoso.",
+            "url": "https://mediafilez.forgecdn.net/files/7628/159/legendarymonsters-2.0.6%20MC%201.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }     
     ]
 }
