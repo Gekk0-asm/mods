@@ -710,6 +710,24 @@
             "url": "https://mediafilez.forgecdn.net/files/4593/540/ylssln-1.20.1-1.1.0.1.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "from_the_shadows_reborn",
+            "description": "más armaduras",
+            "url": "https://mediafilez.forgecdn.net/files/7217/618/fromtheshadowsreborn-2.9.jar",
+            "side": "both",
+            "dependencies": [
+                {
+                    "name": "geckolib",
+                    "description": "Librería de animación 3D para entidades, bloques, armaduras y más.",
+                    "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/HVdLnQMI/geckolib-forge-1.20.1-4.8.3.jar"
+                },
+                {
+                    "name": "more_hitboxes",
+                    "description": "",
+                    "url": "https://mediafilez.forgecdn.net/files/6942/239/morehitboxes-forge-1.20.1-1.9.2.jar"
+                }
+            ]
         }        
     ]
 }
