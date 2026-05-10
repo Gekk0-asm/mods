@@ -728,6 +728,13 @@
                     "url": "https://mediafilez.forgecdn.net/files/6942/239/morehitboxes-forge-1.20.1-1.9.2.jar"
                 }
             ]
+        },
+        {
+            "name": "timeless_and_classics_zero",
+            "description": "Aarmas",
+            "url": "https://cdn.modrinth.com/data/SzzJttH8/versions/C2pCZ5ht/tacz-1.20.1-1.1.8-release.jar",
+            "side": "both",
+            "dependencies": []
         }        
     ]
 }
