@@ -465,7 +465,7 @@
         {
             "name": "iam_music_player",
             "description": "Disfruta de la música en el juego.",
-            "url": "https://cdn.modrinth.com/data/ZHHXRhiU/versions/vYutIurF/iammusicplayer-forge-mc1.20-3.22.0-alpha.5.jar",
+            "url": "https://mediafilez.forgecdn.net/files/7775/801/IMPR-Forge-3.23.3-1.20.1-1.20.1.jar",
             "side": "both",
             "dependencies": [
                 {
