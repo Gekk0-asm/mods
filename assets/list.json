@@ -829,7 +829,13 @@
             "description": "",
             "url": "https://mediafilez.forgecdn.net/files/5550/420/formationsnether-1.0.5.jar",
             "side": "server",
-            "dependencies": []
+            "dependencies": [
+                {
+                    "name": "formations_structure_library",
+                    "description": "",
+                    "url": "https://cdn.modrinth.com/data/tPe4xnPd/versions/5zgQmLP4/formations-1.0.4-forge-mc1.20.2.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge"
+                }
+            ]
         },
         {
             "name": "no_end",
