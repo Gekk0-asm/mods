@@ -770,6 +770,13 @@
             "url": "https://mediafilez.forgecdn.net/files/6731/285/realmrpg_imps_and_demons_0.9.1_forge_1.20.1.jar",
             "side": "both",
             "dependencies": []
-        }           
+        },
+        {
+            "name": "nethers_exoticism",
+            "description": "",
+            "url": "https://cdn.modrinth.com/data/3e4LaIlU/versions/C9hh7bJO/nether-s-exoticism-1.20.1-1.2.9.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "both",
+            "dependencies": []
+        }             
     ]
 }
