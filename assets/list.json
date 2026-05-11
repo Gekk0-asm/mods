@@ -816,6 +816,13 @@
                     "url": "https://cdn.modrinth.com/data/Ua7DFN59/versions/PJOYAmAs/YungsApi-1.20-Forge-4.0.6.jar"
                 }
             ]
+        },
+        {
+            "name": "piglin_proliferation",
+            "description": "",
+            "url": "https://cdn.modrinth.com/data/iRE67WIn/versions/35nRLWhN/piglinproliferation-1.20.1-1.2.8.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "both",
+            "dependencies": []
         }               
     ]
 }
