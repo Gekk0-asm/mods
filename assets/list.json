@@ -777,6 +777,13 @@
             "url": "https://cdn.modrinth.com/data/3e4LaIlU/versions/C9hh7bJO/nether-s-exoticism-1.20.1-1.2.9.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "both",
             "dependencies": []
-        }             
+        },
+        {
+            "name": "nethers_overhaul",
+            "description": "",
+            "url": "https://cdn.modrinth.com/data/9cSaI7xV/versions/WeEI1VNb/Nether%27s%20Overhaul%20-1.20.1%201.3.0.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "both",
+            "dependencies": []
+        }              
     ]
 }
