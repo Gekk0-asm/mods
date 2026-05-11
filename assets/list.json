@@ -749,6 +749,13 @@
             "url": "https://cdn.modrinth.com/data/fgvoNDL1/versions/ct6IgvWn/Multiworld-Forge-1.20.1.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "server",
             "dependencies": []
-        }        
+        },
+        {
+            "name": "incendium",
+            "description": "agrega biomas al nether",
+            "url": "https://cdn.modrinth.com/data/ZVzW5oNS/versions/uUqarp2H/Incendium_1.20.x_v5.3.5.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "server",
+            "dependencies": []
+        }         
     ]
 }
