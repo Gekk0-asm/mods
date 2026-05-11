@@ -737,9 +737,9 @@
             "dependencies": []
         },
         {
-            "name": "multiworld",
-            "description": "Permite crear dimensiones custom",
-            "url": "https://cdn.modrinth.com/data/fgvoNDL1/versions/ct6IgvWn/Multiworld-Forge-1.20.1.jar?mr_download_reason=standalone&mr_game_version=1.20&mr_loader=forge",
+            "name": "easy_void_dimension",
+            "description": "Agrega una dimension vacia",
+            "url": "https://cdn.modrinth.com/data/nx7XIp3c/versions/O6uovxJx/easy-void-dimension-V1.0.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "server",
             "dependencies": []
         }        
