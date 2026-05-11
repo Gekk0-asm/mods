@@ -756,6 +756,13 @@
             "url": "https://cdn.modrinth.com/data/ZVzW5oNS/versions/uUqarp2H/Incendium_1.20.x_v5.3.5.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "server",
             "dependencies": []
-        }         
+        },
+        {
+            "name": "luminous_nether",
+            "description": "agrega biomas al nether",
+            "url": "https://cdn.modrinth.com/data/2CL6BDdJ/versions/tMeBcGmT/Luminous%20Nether%20V1.3.2%20-%20Forge%201.20.1.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "both",
+            "dependencies": []
+        }           
     ]
 }
