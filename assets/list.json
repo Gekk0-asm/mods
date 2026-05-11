@@ -739,7 +739,7 @@
         {
             "name": "multiworld",
             "description": "Permite crear dimensiones custom",
-            "url": "https://cdn.modrinth.com/data/fgvoNDL1/versions/ct6IgvWn/Multiworld-Forge-1.20.1.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "url": "https://cdn.modrinth.com/data/fgvoNDL1/versions/ct6IgvWn/Multiworld-Forge-1.20.1.jar?mr_download_reason=standalone&mr_game_version=1.20&mr_loader=forge",
             "side": "server",
             "dependencies": []
         }        
