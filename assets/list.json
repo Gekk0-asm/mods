@@ -830,6 +830,13 @@
             "url": "https://mediafilez.forgecdn.net/files/5550/420/formationsnether-1.0.5.jar",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "no_end",
+            "description": "",
+            "url": "https://mediafilez.forgecdn.net/files/7261/44/noend-1.0.jar",
+            "side": "server",
+            "dependencies": []
         }                 
     ]
 }
