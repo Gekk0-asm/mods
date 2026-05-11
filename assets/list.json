@@ -763,6 +763,13 @@
             "url": "https://cdn.modrinth.com/data/2CL6BDdJ/versions/tMeBcGmT/Luminous%20Nether%20V1.3.2%20-%20Forge%201.20.1.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "both",
             "dependencies": []
+        },
+        {
+            "name": "realm_rpg_imps_demons",
+            "description": "",
+            "url": "https://mediafilez.forgecdn.net/files/6731/285/realmrpg_imps_and_demons_0.9.1_forge_1.20.1.jar",
+            "side": "both",
+            "dependencies": []
         }           
     ]
 }
