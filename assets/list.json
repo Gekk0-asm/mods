@@ -823,6 +823,13 @@
             "url": "https://cdn.modrinth.com/data/iRE67WIn/versions/35nRLWhN/piglinproliferation-1.20.1-1.2.8.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "both",
             "dependencies": []
-        }               
+        },
+        {
+            "name": "formations_nether",
+            "description": "",
+            "url": "https://mediafilez.forgecdn.net/files/5550/420/formationsnether-1.0.5.jar",
+            "side": "server",
+            "dependencies": []
+        }                 
     ]
 }
