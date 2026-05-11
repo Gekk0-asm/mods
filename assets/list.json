@@ -742,6 +742,13 @@
             "url": "https://cdn.modrinth.com/data/nx7XIp3c/versions/O6uovxJx/easy-void-dimension-V1.0.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "server",
             "dependencies": []
+        },
+        {
+            "name": "dimension_yeleport",
+            "description": "Me permite hacer tp a dimensiones",
+            "url": "https://cdn.modrinth.com/data/49hXsr4B/versions/a2kQSVuG/DimensionTeleport-1.20.1-2.0.1.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "server",
+            "dependencies": []
         }        
     ]
 }
