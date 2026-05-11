@@ -135,6 +135,17 @@ def main ():
                     print(f'  Error al descargar {filename}')
         
         save_cache(base_path, cachedata)
+         # --- Borrar archivo de configuración no deseado ---
+        base = Path(args.path)
+        config_dir = base.parent / 'config'
+        config_path = config_dir / 'iammusicplayer.toml'
+
+        if config_path.exists():
+            config_path.unlink()
+            print(f"Archivo eliminado: {config_path}")
+        else:
+            print(f"No se encontró el archivo para eliminar: {config_path}")
+        
         print("\n--- Sincronización finalizada. ---")
 
         # print(target_items)
