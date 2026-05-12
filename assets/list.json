@@ -843,6 +843,13 @@
             "url": "https://mediafilez.forgecdn.net/files/7261/44/noend-1.0.jar",
             "side": "server",
             "dependencies": []
-        }                 
+        },
+        {
+            "name": "trash_slot",
+            "description": "",
+            "url": "https://cdn.modrinth.com/data/vRYk0bv7/versions/r0K8IYd7/trashslot-forge-1.20.1-15.1.5.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "both",
+            "dependencies": []
+        }                   
     ]
 }
