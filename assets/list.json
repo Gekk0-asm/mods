@@ -863,6 +863,13 @@
             "url": "https://cdn.modrinth.com/data/ghrZDhGW/versions/ODiLeApe/skinrestorer-2.7.0%2B1.20-forge.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
             "side": "server",
             "dependencies": []
-        }                 
+        },
+        {
+            "name": "dis_enchanting_table",
+            "description": "Permite a los jugadores quitar encantamientos y ponerlos en libros",
+            "url": "https://cdn.modrinth.com/data/9BgYgXE4/versions/DgDhbN2s/disenchanting_table-merged-1.20.1-5.0.2.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "both",
+            "dependencies": []
+        }                   
     ]
 }
