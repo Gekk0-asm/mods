@@ -856,6 +856,13 @@
                     "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/8rz04Kha/balm-forge-1.20.1-7.3.38-all.jar"
                 }
             ]
-        }                   
+        },
+        {
+            "name": "skin_restorer",
+            "description": "Permite a los jugadores no premium y premium ver sus skin",
+            "url": "https://cdn.modrinth.com/data/ghrZDhGW/versions/ODiLeApe/skinrestorer-2.7.0%2B1.20-forge.jar?mr_download_reason=standalone&mr_game_version=1.20.1&mr_loader=forge",
+            "side": "server",
+            "dependencies": []
+        }                 
     ]
 }
